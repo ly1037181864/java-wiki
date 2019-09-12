@@ -127,7 +127,7 @@ top -p 7930 -H  打印线程栈信息
 -XX:+HeapDumpOnOutOfMemoryError     在内存溢出时导出整个堆信息。  
 -XX:+HeapDumpPath                   指定堆的存放路径。
 -XX:+HeapDumpOnCtrlBreak            使用Ctrl+Break键可以让虚拟机生成heapdump文件     
--XX:MaxMetaspaceSize                指定元空间的最大可用值。   
+-XX:MaxMetaspaceSize                ****指定元空间的最大可用值。   
 -XX:MaxDirectMemorySize             最大可用直接内存，如不设置，默认值为最大堆空间。直接内存的溢出依然会引起系统的OOM。
 -XX:InitialHeapSize                 初始化的堆大小     
 -XX:MaxHeapSize                     最大堆大小   
