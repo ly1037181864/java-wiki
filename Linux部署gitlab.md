@@ -73,6 +73,52 @@ liuyou@xiaoantimes.com
 liuyou920623
 ```
 
+- 配置ssh key
+1.输入一下命令
+```text
+ssh-keygen -t rsa -C 'liuyou@xiaoantimes.com' 然后一路回车(liuyou@xiaoantimes.com是你的邮箱地址)
+```
+2.出现如下提示,回车键进入
+```text
+Enter file in which to save the key (/Users/yzq/.ssh/id_rsa):
+```
+3.如果你的.ssh/id_rsa已经，则会出现：/Users/yzq/.ssh/id_rsa already exists.
+4.提示Overwrite (y/n)? y
+```text
+输入：y  （重新覆盖）
+输入：n  （不覆盖）
+```
+5.设置密码并确认（位数不要太短，尽量设置6位）
+```text
+liuyou920623
+```
+6.提示如下信息成功
+```text
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:MGZUC5jD4TFsJXViVlv+3IVL1muEnAWmUmmx3Lp8jrk liuyou@xiaoantimes.com
+The key's randomart image is:
++---[RSA 2048]----+
+|   o=*Oo+ .ooo.. |
+|   .BB + =oo* +o |
+|   ...= o.o+ =+.o|
+|     o o  .o.+.o.|
+|        S  .o oo |
+|          . . .  |
+|           o .   |
+|            =    |
+|           E..   |
++----[SHA256]-----+
+```
+7.查看本机ssh公钥
+```text
+cd ~/.ssh
+ls（查看目录是否有id_rsa.pub文件）
+查看公钥：cat id_rsa.pub    或者vim id_rsa.pub
+```
+8.登录10.10.0.237：7094(gitlab服务器)配置ssh keys，将id_rsa.pub中的信息复制到指定输入框，并点击add key完成添加    
+![avatar](imags/gitlab/gitlab-01.png)  
 - 问题解决
 1.502
 ```text
