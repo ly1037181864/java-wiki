@@ -74,14 +74,19 @@ liuyou920623
 ```
 
 - 配置ssh key
-1.输入一下命令
+1.进入gitlab服务器输入一下命令
 ```text
 ssh-keygen -t rsa -C 'liuyou@xiaoantimes.com' 然后一路回车(liuyou@xiaoantimes.com是你的邮箱地址)
+
+-t 指定密钥类型，默认是 rsa ，可以省略。
+-C 设置注释文字，比如邮箱。
+-f 指定密钥文件存储文件名。
 ```
 2.出现如下提示,回车键进入
 ```text
-Enter file in which to save the key (/Users/yzq/.ssh/id_rsa):
+Enter file in which to save the key (/Users/yzq/.ssh/id_rsa): [这里可不填，不填默认保存到提示目录下，否则保存到指定目录]
 ```
+![avatar](imags/gitlab/gitlab-02.png) 
 3.如果你的.ssh/id_rsa已经，则会出现：/Users/yzq/.ssh/id_rsa already exists.
 4.提示Overwrite (y/n)? y
 ```text
@@ -119,6 +124,7 @@ ls（查看目录是否有id_rsa.pub文件）
 ```
 8.登录10.10.0.237：7094(gitlab服务器)配置ssh keys，将id_rsa.pub中的信息复制到指定输入框，并点击add key完成添加    
 ![avatar](imags/gitlab/gitlab-01.png)  
+参考文档：https://www.awaimai.com/2200.html
 - 问题解决
 1.502
 ```text
