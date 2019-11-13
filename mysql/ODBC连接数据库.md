@@ -98,4 +98,5 @@ odbcinst -i -s -h -f MariaDB_odbc_data_source_template.ini
 
 参考：
 https://blog.csdn.net/mei777387/article/details/75331428
+https://mariadb.com/kb/en/library/about-mariadb-connector-odbc/
 https://mariadb.com/kb/en/library/creating-a-data-source-with-mariadb-connectorodbc/
