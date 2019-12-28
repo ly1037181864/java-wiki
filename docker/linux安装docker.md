@@ -19,7 +19,7 @@ systemctl start docker  #启动docker
 - 配置镜像加速(配置国内镜像仓库)
 ```text
 mkdir -p /etc/docker
-vim /etc/docker/daemon.json
+vim /etc/docker/daemon.json  #阿里云镜像加速可以登录阿里云服务器参考文档说明
 systemctl daemon-reload
 systemctl restart docker 
 ```
