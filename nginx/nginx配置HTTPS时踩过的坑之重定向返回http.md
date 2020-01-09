@@ -41,3 +41,11 @@ nginx -t    #测试配置文件是否正确
 nginx -s reload  #不重启服务的情况下重新加载配置文件
 ```
 4.清理浏览器缓存(一定要清理，否则没有效果，这是个巨坑)
+
+
+参考文档：
+https://blog.csdn.net/baofeidyz/article/details/80435929
+https://www.cnblogs.com/zhoudawei/p/9257276.html
+https://blog.csdn.net/cloume/article/details/78252319
+https://www.cnblogs.com/shihuc/p/9047636.html
+https://www.cnblogs.com/fozero/p/10968550.html
