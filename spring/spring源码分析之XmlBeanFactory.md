@@ -5,8 +5,8 @@
 XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring-test.xml"));
 ```
 
-- 容器初始化流程
-![avatar](../imags/spring/gradle-03.png)
+- 容器初始化流程，加载BeanDefinition流程           
+![avatar](../imags/spring/spring-02.png)
 
 - 初始化详解
 1.构建XmlBeanFactory实例时，spring默认构建了XmlBeanDefinitionReader对象，并将xml的解析委托给了XmlBeanDefinitionReader对象去处理
