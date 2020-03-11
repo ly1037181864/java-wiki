@@ -20,13 +20,13 @@ vim tokudb.cnf
 
 - heck for Transparent HugePage Support on Linux
 ```text
-cat /sys/kernel/mm/transparent_hugepage/enabled
+cat /sys/kernel/mm/transparent_hugepage/enabled     #注意这个命令需要在宿主机上运行，而不是在容器内运行
 ```
 ```text
 always madvise [never] //如果上述命令得到的结果是这个，则忽略后面的逻辑
 ```
 ```text
-[always] madvise never //如果上述命令得到的结果是这个，则需要执行以下命令
+[always] madvise never //如果上述命令得到的结果是这个，则需要执行以下命令(注意这两个命令需要在宿主机上运行，而不是在容器内运行)
 ```
 ```text
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
