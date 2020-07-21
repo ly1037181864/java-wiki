@@ -36,7 +36,7 @@ netstat -pnt |grep :3306 |wc
 ```
 
 查看某一端口的连接客户端IP 比如3306端口
-```text
+```textbcprov
 netstat -anp |grep 3306
 ```
 
