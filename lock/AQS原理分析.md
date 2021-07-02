@@ -272,6 +272,9 @@ public final boolean hasQueuedPredecessors() {
 ![avar](../imags/lock/locks-01.png)
 
 
+https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247484040&idx=1&sn=60633c2dc4814b26dc4b39bb2bb5d4dd&chksm=fa497d39cd3ef42f539cd0576c1a3575ee27307048248571e954f0ff21a5a9b1ddfab522c834&scene=21#wechat_redirect
+
+
 
 
 
